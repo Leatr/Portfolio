@@ -1,0 +1,189 @@
+
+.noto-serif-Font{
+    font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+*{
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100; 
+}
+
+body{
+    max-width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+   
+}
+
+a {
+  text-decoration-line:none ;
+  color: white;
+  font-style: bold;
+  font-size: 20px;
+}
+
+/*header*/
+.headercontainer {
+  margin-right: 50%;
+  height: 600px;
+  border-bottom-right-radius: 5px;
+ 
+}
+
+
+.nav {
+  background-color:#E2777F;
+  margin-left: -10px;
+  width: 100%;
+  height: 50px;
+  margin-top: -16px;
+
+}
+
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  
+}
+
+/*conteneur avec coordonnées*/
+.backgroundbleu {
+  background-color:#E2777F;
+  margin-left: -10px;
+  margin-right: 55%;
+  height: 600px;
+  border-bottom-right-radius: 5px;
+}
+
+.coordonnees {
+  list-style: none;
+  font-size: 25px;
+  color: white;
+
+}
+
+/*Animation du formulaire*/
+ .boldinfo{
+  font-weight: bold;
+}
+
+.coordonnees .formulaire1 a:hover{
+  font-weight: bolder;
+  animation-duration: 3s;
+  animation-name: slidein;
+  }
+  @keyframes slidein {
+    from {
+      margin-right: 2%;
+      width: 100%;
+    }
+  
+    to {
+      margin-right: 0%;
+      width: 100%;
+    }
+  }
+
+  .coordonnees .formulaire2 a:hover{
+    font-weight: bolder;
+    animation-duration: 3s;
+    animation-name: slidein;
+    }
+    @keyframes slidein {
+      from {
+        margin-left: 2%;
+        width: 100%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+
+.coordonnees ul{
+ display: flex;
+ flex-direction: row;
+ list-style: none;
+ padding: 0;
+}
+
+
+/*Le formulaire de contact*/
+
+.coordonnees, .formulaire1, .formulaire2, .formulaire3{
+ padding: 33px 0px 0px 30px ;
+}
+
+/*Les icons avec animations*/
+.coordonnees ul li img {
+  transition: all 0.3s;
+  
+}
+.coordonnees ul li img:hover{
+transform: scale(2.0) rotate(5deg);
+}
+.icon1{
+width: 35px;
+padding: 0 20px 0 0;
+}
+
+.icon2{
+  width: 35px;
+}
+
+
+/*Les regroupement des deux photo avec absolute*/
+
+
+
+.backgroundbleu .flowers .coordonnees{
+  display:flex;
+  flex-direction: row;
+ 
+
+}
+
+.flowers .pinkflowers{
+  height: 56%;
+    width: 23%;
+    
+  
+}
+.flowers .lea {
+  margin-left: 31%;
+  width: 21%;
+  height: 54%;
+}
+.flowers img{
+  margin-top: 2%;
+  margin-left: 30%;
+  position: absolute;
+  height: 53%;
+  
+}
+
+
+.textalign{
+  float: right;
+  padding-right: 20px;
+  margin-top: -550px;
+  margin-right: 160px ;
+  
+}
+
+h1{
+  font-size: 5em;
+  color: rgb(56, 148, 148);
+  font-style: italic;
+
+}
