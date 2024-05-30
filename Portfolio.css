@@ -68,6 +68,7 @@ a {
   list-style: none;
   font-size: 25px;
   color: white;
+  margin-right: 49%;
 
 }
 
@@ -145,13 +146,17 @@ padding: 0 20px 0 0;
 /*Les regroupement des deux photo avec absolute*/
 
 
-
-.backgroundbleu .flowers .coordonnees{
-  display:flex;
-  flex-direction: row;
- 
-
+.headerrow {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 174px;
+  margin-left: -45px;
+  margin-top:-603px ;  
 }
+
+  
+
+
 
 .flowers .pinkflowers{
   height: 56%;
@@ -172,14 +177,6 @@ padding: 0 20px 0 0;
   
 }
 
-
-.textalign{
-  float: right;
-  padding-right: 20px;
-  margin-top: -550px;
-  margin-right: 160px ;
-  
-}
 
 h1{
   font-size: 5em;
