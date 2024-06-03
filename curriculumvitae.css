@@ -1,0 +1,42 @@
+.noto-serif-Font{
+    font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+*{
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100; 
+}
+
+html, body{
+    margin: 0px auto;
+    box-sizing: border-box;
+   
+}
+
+.nav {
+  background-color:#9d9dbe;
+  margin: 0 auto;
+	padding: 10em 3em;
+	text-align: center;
+
+}
+
+
+.imgcv {
+  display:block;
+  
+  margin:auto;
+  
+}
+footer{
+  background-color: rgb(43, 42, 42);
+  padding-top: 10em;
+}

@@ -16,9 +16,9 @@
       "wdth" 100; 
 }
 
-body{
-    max-width: 100%;
-    height: 100%;
+html, body{
+    margin:0px auto;
+    font-size: 20px;
     box-sizing: border-box;
    
 }
@@ -40,24 +40,60 @@ a {
 
 
 .nav {
-  background-color:#E2777F;
-  margin-left: -10px;
-  width: 100%;
-  height: 50px;
-  margin-top: -16px;
+  background-color:#9d9dbe;
+  margin: 0 auto;
+	padding: 10em 3em;
+	text-align: center;
 
 }
 
+.nav a{
+ 
+  color: #FFF;
+  text-decoration: none;
+  font: 20px Raleway;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
 
-.nav ul {
-  display: flex;
-  list-style: none;
-  
+
+
+/*Animation de la navigation*/
+.nav a{
+  color: rgb(15, 15, 15); 
+
+}
+
+.nav a:hover{
+  position: absolute;
+    color: #FFF;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    overflow: hidden;
+    content: attr(alt);
+    transition: all 0.3s;
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+.nav a:hover:before{
+  transform: scale(1);   
+   opacity: 1;
+   
+}
+
+.nav a:before{
+transform: scale(1.2);
+
 }
 
 /*conteneur avec coordonnées*/
 .backgroundbleu {
-  background-color:#E2777F;
+  background-color:#9d9dbe;
   margin-left: -10px;
   margin-right: 55%;
   height: 600px;
@@ -68,7 +104,8 @@ a {
   list-style: none;
   font-size: 25px;
   color: white;
-  margin-right: 49%;
+  margin-right: 46%;
+  margin-top: 235px;
 
 }
 
@@ -79,12 +116,12 @@ a {
 
 .coordonnees .formulaire1 a:hover{
   font-weight: bolder;
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-name: slidein;
   }
   @keyframes slidein {
     from {
-      margin-right: 2%;
+      margin-right: 5%;
       width: 100%;
     }
   
@@ -96,12 +133,12 @@ a {
 
   .coordonnees .formulaire2 a:hover{
     font-weight: bolder;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-name: slidein;
     }
     @keyframes slidein {
       from {
-        margin-left: 2%;
+        margin-left: 5%;
         width: 100%;
       }
     
@@ -116,13 +153,14 @@ a {
  flex-direction: row;
  list-style: none;
  padding: 0;
+ 
 }
 
 
 /*Le formulaire de contact*/
 
 .coordonnees, .formulaire1, .formulaire2, .formulaire3{
- padding: 33px 0px 0px 30px ;
+ padding: 20px 0px 0px 30px ;
 }
 
 /*Les icons avec animations*/
@@ -133,6 +171,7 @@ a {
 .coordonnees ul li img:hover{
 transform: scale(2.0) rotate(5deg);
 }
+
 .icon1{
 width: 35px;
 padding: 0 20px 0 0;
@@ -148,19 +187,13 @@ padding: 0 20px 0 0;
 
 .headerrow {
   display: flex;
-  justify-content: space-between;
-  margin-right: 174px;
-  margin-left: -45px;
-  margin-top:-603px ;  
+  margin-top: -576px;
 }
 
-  
-
-
-
-.flowers .pinkflowers{
+  .flowers .pinkflowers{
   height: 56%;
-    width: 23%;
+  width: 23%;
+  box-shadow: 12px 12px 13px #9d9dbe;
     
   
 }
@@ -168,6 +201,7 @@ padding: 0 20px 0 0;
   margin-left: 31%;
   width: 21%;
   height: 54%;
+  
 }
 .flowers img{
   margin-top: 2%;
@@ -179,8 +213,144 @@ padding: 0 20px 0 0;
 
 
 h1{
-  font-size: 5em;
-  color: rgb(56, 148, 148);
-  font-style: italic;
+  font-size: 4em;
+  color: 	#9d9dbe;
+  margin-bottom: 30px;
+}
 
+h2{
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: #828282;
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 20px;
+}
+.bordureuiux{
+  
+  border-top-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+  text-transform: uppercase;
+  background-color:#a7d9ed45;
+  color: #89899f;
+  font-weight: bold;
+  font-size: 20px; 
+  width: 50%;
+  padding: 10px 0px 10px 20px;
+}
+
+.boxbuttoncv{
+display: flex;
+grid-column-gap: 1rem;
+margin-top: 50px;
+
+
+
+}
+
+.boxbuttoncv div a{
+color: black;
+
+}
+
+.curriculumvitae{
+
+ box-shadow: 0 0 0 3px #a7d9ed;
+ border-radius:40px ;
+ background-color:#ffffff;
+ overflow: hidden;
+ padding: 15px;
+}
+
+.buttonpotfolio{
+  overflow: hidden;
+  border-radius:40px ;
+  background: rgb(167,217,237);
+  background: linear-gradient(29deg, rgba(167,217,237,1) 9%, rgba(157,157,190,1) 89%);
+  padding: 15px;
+  
+
+}
+/*Animation buttonportfolio*/
+
+.animationdivbutton{
+  transform: translate(0%, -25%);
+
+}
+a span{
+  position: relative;
+  z-index: 2;
+}
+.buttonpotfolio{
+  display: block;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.buttonpotfolio:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(221,160,221);
+  background: linear-gradient(152deg, rgba(221,160,221,1) 9%, rgba(214,30,98,1) 100%);
+  transition: all .35s;
+}
+
+.buttonpotfolio:hover{
+  color: #fff;
+}
+
+.buttonpotfolio:hover:after{
+  width: 100%;
+}
+
+/*Animation curriculumvitae*/
+
+.animationdivcurriculum{
+  transform: translate(0%, -25%);
+
+}
+
+ .curriculumvitae span{
+  position: relative;
+  z-index: 2;
+}
+
+.curriculumvitae{
+  display: block;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.curriculumvitae:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(221,160,221);
+  background: linear-gradient(152deg, rgba(221,160,221,1) 9%, rgba(214,30,98,1) 100%);
+  transition: all .35s;
+}
+
+.curriculumvitae:hover{
+  color: #fff;
+}
+
+.curriculumvitae:hover:after{
+  width: 100%;
 }
