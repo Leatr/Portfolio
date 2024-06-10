@@ -18,17 +18,58 @@
 html, body{
     margin: 0px auto;
     box-sizing: border-box;
-   
-}
+    }
 
 .nav {
+  display: flex;
+  justify-content: center;
   background-color:#9d9dbe;
   margin: 0 auto;
-	padding: 10em 3em;
-	text-align: center;
+	padding: 5em 0em 5em 0em ;
 
 }
 
+.nav div a{
+  display: block; 
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+  padding: 30px;
+  text-transform:uppercase;
+  transition:0.5s;
+}
+/*Animation de la navigation*/
+.nav:hover div a{
+  transform:scale(1.5);
+  opacity:0.2;
+  filter:blur(5px);
+}
+.nav div a:hover{
+  transform:scale(2);
+  opacity:1;
+  filter:blur(0);
+  text-decoration:none;
+  color:#693154;
+}
+.nav div a:before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:7%;
+  background:#693154;
+  box-shadow: 0px 6px 10px #4d4d4d71;
+  transition:0.5s;
+  transform-origin:right;
+  transform:scaleX(0);
+  z-index:-1;
+}
+.nav div a:hover:before{
+  transition:transform 0.5s;
+  transform-origin:left;
+  transform:scaleX(1);
+}
 
 .imgcv {
   display:block;

@@ -18,7 +18,7 @@
 
 html, body{
     margin:0px auto;
-    font-size: 20px;
+    font-size: 18px;
     box-sizing: border-box;
    
 }
@@ -26,7 +26,6 @@ html, body{
 a {
   text-decoration-line:none ;
   color: white;
-  font-style: bold;
   font-size: 20px;
 }
 
@@ -40,57 +39,56 @@ a {
 
 
 .nav {
+  display:flex;
+  justify-content: center;
   background-color:#9d9dbe;
   margin: 0 auto;
-	padding: 10em 3em;
+	padding: 5em 0em 5em 0em ;
 	text-align: center;
 
 }
 
-.nav a{
- 
+.nav div a{
+  display: block; 
+  position: relative;
   color: #FFF;
   text-decoration: none;
-  font: 20px Raleway;
-  margin: 0px 10px;
-  padding: 10px 10px;
-  position: relative;
-  z-index: 0;
-  cursor: pointer;
+  padding: 30px;
+  text-transform:uppercase;
+  transition:0.5s;
 }
-
-
-
 /*Animation de la navigation*/
-.nav a{
-  color: rgb(15, 15, 15); 
-
+.nav:hover div a{
+  transform:scale(1.5);
+  opacity:0.2;
+  filter:blur(5px);
 }
-
-.nav a:hover{
-  position: absolute;
-    color: #FFF;
-    top: 0px;
-    left: 0px;
-    padding: 10px;
-    overflow: hidden;
-    content: attr(alt);
-    transition: all 0.3s;
-    transform: scale(0.8);
-    opacity: 0;
+.nav div a:hover{
+  transform:scale(2);
+  opacity:1;
+  filter:blur(0);
+  text-decoration:none;
+  color:#693154;
 }
-
-.nav a:hover:before{
-  transform: scale(1);   
-   opacity: 1;
-   
+.nav div a:before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:7%;
+  background:#693154;
+  box-shadow: 0px 6px 10px #4d4d4d71;
+  transition:0.5s;
+  transform-origin:right;
+  transform:scaleX(0);
+  z-index:-1;
 }
-
-.nav a:before{
-transform: scale(1.2);
-
+.nav div a:hover:before{
+  transition:transform 0.5s;
+  transform-origin:left;
+  transform:scaleX(1);
 }
-
 /*conteneur avec coordonnées*/
 .backgroundbleu {
   background-color:#9d9dbe;
@@ -116,8 +114,9 @@ transform: scale(1.2);
 
 .coordonnees .formulaire1 a:hover{
   font-weight: bolder;
-  animation-duration: 5s;
+  animation-duration: 1s;
   animation-name: slidein;
+  color: #693154;
   }
   @keyframes slidein {
     from {
@@ -126,15 +125,44 @@ transform: scale(1.2);
     }
   
     to {
-      margin-right: 0%;
+      margin-right: 5%;
       width: 100%;
+
+      
     }
   }
+  .coordonnees .formulaire1 a{
+    display: block;
+  color: #FFF;
+  text-decoration: none;
+  transition:0.5s;
+  z-index:-1;
+  }
+  .coordonnees .formulaire1 a:before{
+    content:'';
+    position:absolute;
+    top:555px;
+    width:20%;
+    height:10px;
+    background-color : #693154;
+    box-shadow: 0px 6px 10px #4d4d4d71;
+    transition:0.5s;
+    transform-origin:right;
+    transform:scaleX(0);
+    z-index:1;
+  }
+  .coordonnees .formulaire1 a:hover:before{
+    transition:transform 0.5s;
+    transform-origin:left;
+    transform:scaleX(1);
+  }
 
+  /*deuxieme formulaire numero de telephone*/
   .coordonnees .formulaire2 a:hover{
     font-weight: bolder;
-    animation-duration: 5s;
+    animation-duration: 1s;
     animation-name: slidein;
+    color: #693154;
     }
     @keyframes slidein {
       from {
@@ -148,6 +176,32 @@ transform: scale(1.2);
       }
     }
 
+    .coordonnees .formulaire2 a{
+      display: block;
+    color: #FFF;
+    text-decoration: none;
+    transition:0.5s;
+    z-index:-1;
+    }
+    .coordonnees .formulaire2 a:before{
+      content:'';
+      position:absolute;
+      top: 640px;
+      width:20%;
+      height:10px;
+      background-color : #693154;
+      box-shadow: 0px 6px 10px #4d4d4d71;
+      transition:0.5s;
+      transform-origin:right;
+      transform:scaleX(0);
+      z-index:1;
+    }
+    .coordonnees .formulaire2 a:hover:before{
+      transition:transform 0.5s;
+      transform-origin:left;
+      transform:scaleX(1);
+    }
+  
 .coordonnees ul{
  display: flex;
  flex-direction: row;
