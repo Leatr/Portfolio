@@ -244,19 +244,13 @@ padding: 0 20px 0 0;
   margin-top: -576px;
 }
 
-  .flowers .pinkflowers{
-  height: 56%;
-  width: 23%;
-  box-shadow: 12px 12px 13px #9d9dbe;
-    
-  
-}
 .flowers .lea {
   margin-top: 4%;
     margin-left: 35%;
     position: absolute;
     height: 55%;
     border-radius: 30px;
+    box-shadow: 12px 12px 13px #9d9dbe;
 }
   
 
@@ -264,7 +258,7 @@ padding: 0 20px 0 0;
 
 h1{
   font-size: 4em;
-  color: 	#9d9dbe;
+  color: #353538	;
   margin-bottom: 30px;
 }
 
@@ -404,3 +398,7 @@ a span{
 .curriculumvitae:hover:after{
   width: 100%;
 }
+
+/*Fin du header */
+
+/*Le main */
