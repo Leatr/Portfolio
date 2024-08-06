@@ -21,7 +21,20 @@ html, body{
     font-size: 18px;
     box-sizing: border-box;
    
+   
 }
+
+
+.headerimgfixed{
+  width: 100%;
+ 
+  background:  no-repeat;
+  background-attachment: fixed;
+  position: fixed;
+  z-index: -1;
+
+}
+
 
 a {
   text-decoration-line:none ;
@@ -241,16 +254,14 @@ padding: 0 20px 0 0;
 
 .headerrow {
   display: flex;
-  margin-top: -576px;
+  margin-top: -565px;
 }
 
 .flowers .lea {
-  margin-top: 4%;
-    margin-left: 35%;
+  margin-top: -2px;
+    margin-left: 30%;
     position: absolute;
-    height: 55%;
-    border-radius: 30px;
-    box-shadow: 12px 12px 13px #9d9dbe;
+    height: 60%;
 }
   
 
@@ -258,25 +269,30 @@ padding: 0 20px 0 0;
 
 h1{
   font-size: 4em;
-  color: #353538	;
+  color: #ffffff	;
   margin-bottom: 30px;
 }
 
 h2{
   margin-top: 0px;
   margin-bottom: 20px;
-  color: #828282;
+  color: #ddf5f4;
     font-size: 35px;
     font-weight: 500;
     letter-spacing: 20px;
+}
+
+.description p{
+  color: #ffffff;
+  font-weight: bold;
 }
 .bordureuiux{
   
   border-top-left-radius: 2.5rem;
   border-bottom-right-radius: 2.5rem;
   text-transform: uppercase;
-  background-color:#a7d9ed45;
-  color: #89899f;
+  background-color:#a7eded9f;
+  color: #ffffff;
   font-weight: bold;
   font-size: 20px; 
   width: 50%;
@@ -293,7 +309,7 @@ margin-top: 50px;
 }
 
 .boxbuttoncv div a{
-color: black;
+color: rgb(0, 0, 0);
 
 }
 
@@ -301,7 +317,7 @@ color: black;
 
  box-shadow: 0 0 0 3px #a7d9ed;
  border-radius:40px ;
- background-color:#ffffff;
+ background-color:#ffffff00;
  overflow: hidden;
  padding: 15px;
 }
@@ -350,6 +366,7 @@ a span{
 
 .buttonpotfolio:hover{
   color: #fff;
+  
 }
 
 .buttonpotfolio:hover:after{
@@ -402,3 +419,44 @@ a span{
 /*Fin du header */
 
 /*Le main */
+main{
+  background: rgba(46, 46, 46, 0.877);
+
+}
+
+.intro{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 200px;
+  
+}
+
+
+.flexiconintro{
+  display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    
+}
+.flexiconintro p {
+  color: #ffffff;
+  font-size: 20px;
+}
+.icon{
+  width: 50px;
+}
+.projetspresentation{
+background-color: #ddf5f4;
+margin-top: 200px;
+ }
+.containboxprojets{
+  box-shadow: 1px 1px 1px  #353538;
+ 
+}
+ main img{
+  width: 50%;
+  
+ }
+ 
