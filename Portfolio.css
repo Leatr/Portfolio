@@ -27,14 +27,16 @@ html, body{
 
 .headerimgfixed{
   width: 100%;
- 
   background:  no-repeat;
   background-attachment: fixed;
   position: fixed;
-  z-index: -1;
+  z-index: -10;
 
 }
-
+.divlandscapeimg{
+  background-image: url(img\overlay.png) , url(img\landscape.jpg);
+ 
+}
 
 a {
   text-decoration-line:none ;
@@ -56,9 +58,9 @@ a {
   justify-content: center;
   background-color:#353538;
   margin: 0 auto;
-	padding: 5em 0em 5em 0em ;
+	padding: 4em 0em 1em 0em ;
 	text-align: center;
-
+ 
 }
 
 .nav div a{
@@ -258,7 +260,7 @@ padding: 0 20px 0 0;
 }
 
 .flowers .lea {
-  margin-top: -2px;
+  margin-top: -4px;
     margin-left: 30%;
     position: absolute;
     height: 60%;
@@ -419,18 +421,14 @@ a span{
 /*Fin du header */
 
 /*Le main */
-main{
-  background: rgba(46, 46, 46, 0.877);
-
-}
-
 .intro{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding-top: 200px;
-  
+  padding: 400px 0px 400px 0px;
+  background-color:#262627e4;
 }
+
 
 
 .flexiconintro{
@@ -448,15 +446,17 @@ main{
   width: 50px;
 }
 .projetspresentation{
-background-color: #ddf5f4;
-margin-top: 200px;
+background-color: rgb(0, 0, 0);
+margin-top: 600px;
+
  }
-.containboxprojets{
-  box-shadow: 1px 1px 1px  #353538;
- 
-}
- main img{
-  width: 50%;
+
+ .projetspresentation p{
+ margin: 0px;
   
- }
+   }
  
+footer{
+  background-color:#353538;
+  padding-top: 100px;
+}
